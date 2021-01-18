@@ -1,0 +1,355 @@
+* {
+  outline: none;
+}
+
+.layout-holder__content {
+  padding: 32px 64px;
+  background-color: #fff;
+
+  .layout-holder__content__header {
+
+    margin-top: 64px;
+    width: 100%;
+    height: 50px;
+    background-image: url('../../../assets/images/logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .layout-holder__content__body__form__head__title {
+    text-align: center;
+    padding: 25px 0;
+  }
+
+  h2 {
+    position: relative;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #bd60cf;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 24px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: #bd60cf;
+      margin-right: 8px;
+    }
+  }
+}
+
+.pr-2 {
+  padding-right: .5rem;
+}
+
+.pl-2 {
+  padding-left: .5rem;
+}
+
+.c-red {
+  color: red;
+  font-size: 18px;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.fileupload {
+  position: relative;
+  width: 92%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 40px;
+  margin-top: 3px;
+  border-radius: 4px;
+  padding: 6px 12px;
+  border: 1px dashed #e6e6e6;
+  overflow: hidden;
+
+  .fileupload-placeholder {
+    padding: 6px 12px;
+    font-weight: 400;
+    color: #706868d9;
+    width: 54%;
+  }
+
+  .btn-primary {
+    background-color: #bd60cf;
+    color: #fff;
+  }
+
+  .btn {
+    display: inline-block;
+    border: 0 solid transparent;
+    border-radius: 4px;
+    line-height: 20px;
+    padding: 10px 45px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none !important;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+
+  .fileupload-button {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    height: 31px;
+    line-height: 31px !important;
+  }
+
+  .fileupload-button input[type=file] {
+    -webkit-appearance: none;
+    position: absolute;
+    opacity: 0;
+  }
+}
+
+:host::ng-deep .mat-form-field-appearance-outline:focus .mat-form-field-outline {
+  color: #bd60cf !important;
+
+  .mat-hint,
+  input,
+  ::placeholder,
+  .mat-form-field-label {
+    color: white;
+  }
+}
+
+:host::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-thick {
+  color: #bd60cf;
+}
+
+mat-label {
+  color: #706868d9;
+}
+
+mat-card {
+  color: #bd60cf;
+  width: 100%;
+  background-color: rgba(189, 96, 207, .2);
+  margin-bottom: 25px;
+  padding: 8px 24px;
+}
+
+.btn-fluid {
+  display: block;
+  width: 100%;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: 1px dashed #bd60cf;
+  color: #bd60cf;
+  padding: 9px 45px;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 4px;
+  line-height: 20px;
+  padding: 10px 45px;
+  text-align: center;
+  vertical-align: middle;
+
+  text-decoration: none !important;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.btn-transparent:hover {
+  background-color: #bd60cf;
+  color: #fff;
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+.input-label {
+  display: inline-block;
+  line-height: 24px;
+  color: #4d4d4d;
+  margin-bottom: 6px;
+}
+
+.radio {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right: 24px;
+}
+
+.radio input[type=radio] {
+  -webkit-appearance: none;
+  position: absolute;
+  opacity: 0;
+}
+
+.radio-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  border: 1px solid #d9d9d9;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+}
+
+.radio input[type=radio]:checked~.radio-control:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.radio-control:before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #bd60cf;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.radio-label {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  line-height: 24px;
+  color: #000;
+  margin-left: 12px;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.w-95 {
+  width: 95%;
+}
+
+.layout-holder-h3 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  background-color: #f2f2f2;
+  padding: 12px 24px;
+  border-radius: 4px;
+  margin: 24px 0;
+  width: 100%;
+}
+
+.m-20 {
+  margin: 20px 0;
+}
+
+.btn-primary {
+  background-color: #bd60cf;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #84129a;
+}
+
+.layout-holder__content__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+
+  .layout-holder__content__footer__copyright {
+    display: block;
+    font-family: Futura New Book;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.text-right {
+  text-align: right;
+}
+
+:host::ng-deep mat-radio-outer-circle {
+  border: 1px solid #d9d9d9 !important;
+}
+
+:host::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle,
+.mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,
+.mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+  background-color: #bd60cf;
+}
+
+:host::ng-deep .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: #bd60cf;
+}
+
+:host::ng-deep .mat-radio-label-content {
+  margin-right: 20px;
+}
